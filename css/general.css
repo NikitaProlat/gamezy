@@ -572,6 +572,9 @@ footer .footer .bottom .leftLinks a {
   footer .footer p {
     width: 100%;
   }
+  .policy .row {
+    width: 100% !important;
+  }
 }
 @media screen and (max-width: 820px) {
   .center {
@@ -735,6 +738,19 @@ footer .footer .bottom .leftLinks a {
   footer .footer {
     gap: 25px;
   }
+  .policy h2 {
+    font-size: 40px !important;
+  }
+  .policy .row h4 {
+    font-size: 20px !important;
+  }
+  .policy .row p,
+  .policy .row ul li {
+    font-size: 16px !important;
+  }
+  .policy {
+    padding: 96px 0px 60px 0px !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .FAQ .faqList .faqItem {
@@ -784,4 +800,68 @@ footer .footer .bottom .leftLinks a {
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+}
+
+header .policyPage .nav a {
+  color: #212121;
+}
+header .policyPage .nav a:last-child {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 14px 44px;
+  border-radius: 100px;
+  background: #007DC8;
+}
+
+.policy {
+  padding: 163px 0px 110px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.policy h2 {
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.policy .row {
+  display: flex;
+  flex-direction: column;
+  width: 914px;
+}
+.policy .row h4 {
+  color: #1A1A1A;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.policy .row p {
+  color: #1D1D1D;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+}
+.policy .row ul {
+  margin-left: 20px;
+}
+.policy .row ul li {
+  color: #1D1D1D;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
 }/*# sourceMappingURL=general.css.map */

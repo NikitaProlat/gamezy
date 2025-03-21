@@ -666,6 +666,10 @@ footer {
     footer .footer p {
         width: 100%;
     }
+
+    .policy .row {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -870,6 +874,23 @@ footer {
     footer .footer {
         gap: 25px;
     }
+
+    .policy h2 {
+        font-size: 40px !important;
+    }
+
+    .policy .row h4 {
+        font-size: 20px !important;
+    }
+
+    .policy .row p,
+    .policy .row ul li {
+        font-size: 16px !important;
+    }
+
+    .policy {
+        padding: 96px 0px 60px 0px !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -926,6 +947,87 @@ footer {
             font-weight: 700;
             line-height: normal;
             text-decoration: none;
+        }
+    }
+}
+
+
+
+
+//Privacy Policy
+
+header {
+    .policyPage {
+        .nav {
+            a {
+                color: #212121;
+            }
+
+            a:last-child {
+                color: #FFF;
+                font-family: Manrope;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding: 14px 44px;
+                border-radius: 100px;
+                background: #007DC8;
+            }
+        }
+    }
+}
+
+.policy {
+    padding: 163px 0px 110px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+        color: #1F1F1F;
+        font-family: Manrope;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 914px;
+
+        h4 {
+            color: #1A1A1A;
+            font-family: Manrope;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #1D1D1D;
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%; /* 21.6px */
+        }
+
+        ul {
+            margin-left: 20px;
+            li {
+                color: #1D1D1D;
+                font-family: Manrope;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%; /* 21.6px */
+            }
         }
     }
 }
