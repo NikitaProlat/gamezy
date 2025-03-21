@@ -1,0 +1,582 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center {
+    max-width: 1281px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// header
+
+header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .header {
+        display: flex;
+        gap: 207px;
+        align-items: center;
+        padding: 23px 0px;
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+
+            a {
+                color: #FFF;
+                font-family: Manrope;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-decoration: none;
+
+                &:last-child {
+                    color: #000;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 14px 44px;
+                    border-radius: 100px;
+                    background: #FFF;
+                    margin-left: 134px;
+                }
+            }
+        }
+    }
+}
+
+
+// baner
+
+.banerWrapper {
+    background-image: linear-gradient(#017DC7, #017DC7), url("../images/banerbg.png");
+    height: 760px;
+    background-blend-mode: hue;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 148px 0px 101px 0px;
+    box-sizing: border-box;
+
+    .baner {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        h1 {
+            color: #FFF;
+            font-family: Manrope;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            width: 805px;
+        }
+        
+        .form {
+            padding: 30px 30px 36px 30px;
+            border-radius: 30px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.30);
+            box-shadow: 0px 4px 5.3px 0px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            width: 760px;
+            
+            h4 {
+                color: #FFF;
+                font-family: Manrope;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-bottom: 6px;
+            }
+
+            .getLink {
+                display: flex;
+                gap: 20px;
+
+                input {
+                    color: rgba(0, 0, 0, 0.30);
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-radius: 100px;
+                    background: #FFF;
+                    padding: 18px 30px;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    height: max-content;
+                }
+
+                button {
+                    color: #FFF;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 18px 30px;
+                    background-color: black;
+                    border-radius: 100px;
+                    word-break: keep-all;
+                    white-space: nowrap;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            .links {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                a:last-child {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+// stats
+
+.stats {
+    display: flex;
+    padding: 46px 0px;
+    justify-content: space-between;
+
+    .statItem {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+
+        h4 {
+            color: #007DC8;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        p {
+            color: #4F4F4F;
+            font-family: Manrope;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+    }
+
+    .stroke {
+        width: 1px;
+        height: 101px;
+        background: #D8D8D8;
+    }
+}
+
+//Steps
+
+.stepsWrapper {
+    background: #F8F8F8;
+    padding: 120px 0px 130px 0px;
+
+    .steps {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        h2 {
+            color: #1F1F1F;
+            font-family: Manrope;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .stepsList {
+            display: flex;
+            gap: 21px;
+
+            .stepItem {
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                border-radius: 30px;
+                background: #FFF;
+                width: 100%;
+                align-items: start;
+
+                svg {
+                    margin-bottom: 20px;
+                }
+    
+                h4 {
+                    color: #1F1F1F;
+                    text-align: center;
+                    font-family: Manrope;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-align: left;
+                }
+    
+                p {
+                    color: #4F4F4F;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+//partners
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 0px;
+    gap: 60px;
+
+    h2 {
+        color: #1F1F1F;
+        font-family: Manrope;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .partnersList {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+//reviews
+
+.reviewsWrapper {
+    background-image: linear-gradient(#017DC7,#017DC7), url("../images/ReviewsBg.png");
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .reviews {
+        padding: 100px 0px 120px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        h2 {
+            color: #FFF;
+            font-family: Manrope;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .reviewsList {
+            display: flex;
+            align-items: start;
+            gap: 20px;
+
+            .reviewItemSmall {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                border-radius: 20px;
+                background: #F8F8F8;
+
+                span {
+                    color: #4F4F4F;
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                h4 {
+                    color: #1F1F1F;
+                    font-family: Manrope;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #8B8B8B;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                img {
+                    margin-top: 9px;
+                }
+            }
+
+            .reviewItem {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                border-radius: 20px;
+                background: #F1F1F1;
+                box-shadow: 0px 4px 8.1px 0px rgba(0, 0, 0, 0.15);
+                padding: 30px;
+
+                .head {
+                    display: flex;
+                    align-items: start;
+                    justify-content: space-between;
+
+                    .user {
+                        display: flex;
+                        gap: 33px;
+                        align-items: center;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+
+                        .userInfo {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            h4 {
+                                color: #1F1F1F;
+                                font-family: Manrope;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 800;
+                                line-height: normal;
+                            }
+
+                            p {
+                                color: #017DC7;
+                                font-family: Manrope;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    .rait {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        span {
+                            color: #000;
+                            font-family: Manrope;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .description {
+                    color: #4F4F4F;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+
+        a {
+            color: #FFF;
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 23px 152px;
+            border-radius: 100px;
+            background: #000;
+            margin-top: 10px;
+            align-self: center;
+            text-decoration: none;
+        }
+    }
+}
+
+
+//faq
+
+.FAQ {
+    padding: 110px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    h2 {
+        color: #1F1F1F;
+        font-family: Manrope;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .faqList {
+        display: flex;
+        flex-direction: column;
+
+        .faqItem {
+            display: flex;
+            flex-direction: column;
+            padding: 29px 20px 25px 30px;
+            gap: 29px;
+            height: 90px;
+            overflow-y: hidden;
+            border-bottom: 1px solid #E5E5E5;
+
+            &.active {
+                height: max-content;
+
+                .title {
+                    .arrow {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+
+                h4 {
+                    color: #1F1F1F;
+                    font-family: Manrope;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+
+                .arrow {
+                    background: none;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            p {
+                color: #4F4F4F;
+                font-family: Manrope;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+
+//footer
+
+footer {
+    background-color: black;
+
+    .footer {
+        padding: 70px 0px 50px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .head {
+            display: flex;
+            gap: 37px;
+            align-items: center;
+        }
+
+        p {
+            color: #9E9E9E;
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            width: 837px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .leftLinks {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                a {
+                    color: #FFF;
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,503 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  max-width: 1281px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header .header {
+  display: flex;
+  gap: 207px;
+  align-items: center;
+  padding: 23px 0px;
+}
+header .header .nav {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+header .header .nav a {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+header .header .nav a:last-child {
+  color: #000;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 14px 44px;
+  border-radius: 100px;
+  background: #FFF;
+  margin-left: 134px;
+}
+
+.banerWrapper {
+  background-image: linear-gradient(#017DC7, #017DC7), url("../images/banerbg.png");
+  height: 760px;
+  background-blend-mode: hue;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 148px 0px 101px 0px;
+  box-sizing: border-box;
+}
+.banerWrapper .baner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.banerWrapper .baner h1 {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 805px;
+}
+.banerWrapper .baner .form {
+  padding: 30px 30px 36px 30px;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 5.3px 0px rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 760px;
+}
+.banerWrapper .baner .form h4 {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+.banerWrapper .baner .form .getLink {
+  display: flex;
+  gap: 20px;
+}
+.banerWrapper .baner .form .getLink input {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  background: #FFF;
+  padding: 18px 30px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.banerWrapper .baner .form .getLink button {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 18px 30px;
+  background-color: black;
+  border-radius: 100px;
+  word-break: keep-all;
+  white-space: nowrap;
+  border: none;
+  outline: none;
+}
+.banerWrapper .baner .form .links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.banerWrapper .baner .form .links a:last-child {
+  margin-left: auto;
+}
+
+.stats {
+  display: flex;
+  padding: 46px 0px;
+  justify-content: space-between;
+}
+.stats .statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.stats .statItem h4 {
+  color: #007DC8;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.stats .statItem p {
+  color: #4F4F4F;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.stats .stroke {
+  width: 1px;
+  height: 101px;
+  background: #D8D8D8;
+}
+
+.stepsWrapper {
+  background: #F8F8F8;
+  padding: 120px 0px 130px 0px;
+}
+.stepsWrapper .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.stepsWrapper .steps h2 {
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.stepsWrapper .steps .stepsList {
+  display: flex;
+  gap: 21px;
+}
+.stepsWrapper .steps .stepsList .stepItem {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 30px;
+  background: #FFF;
+  width: 100%;
+  align-items: start;
+}
+.stepsWrapper .steps .stepsList .stepItem svg {
+  margin-bottom: 20px;
+}
+.stepsWrapper .steps .stepsList .stepItem h4 {
+  color: #1F1F1F;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: left;
+}
+.stepsWrapper .steps .stepsList .stepItem p {
+  color: #4F4F4F;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  padding: 110px 0px;
+  gap: 60px;
+}
+.partners h2 {
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.partners .partnersList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewsWrapper {
+  background-image: linear-gradient(#017DC7, #017DC7), url("../images/ReviewsBg.png");
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.reviewsWrapper .reviews {
+  padding: 100px 0px 120px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.reviewsWrapper .reviews h2 {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.reviewsWrapper .reviews .reviewsList {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItemSmall {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 20px;
+  background: #F8F8F8;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItemSmall span {
+  color: #4F4F4F;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItemSmall h4 {
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItemSmall p {
+  color: #8B8B8B;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItemSmall img {
+  margin-top: 9px;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 8.1px 0px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head .user {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head .user img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head .user .userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head .user .userInfo h4 {
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head .user .userInfo p {
+  color: #017DC7;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head .rait {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .head .rait span {
+  color: #000;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.reviewsWrapper .reviews .reviewsList .reviewItem .description {
+  color: #4F4F4F;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.reviewsWrapper .reviews a {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 23px 152px;
+  border-radius: 100px;
+  background: #000;
+  margin-top: 10px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.FAQ {
+  padding: 110px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.FAQ h2 {
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.FAQ .faqList {
+  display: flex;
+  flex-direction: column;
+}
+.FAQ .faqList .faqItem {
+  display: flex;
+  flex-direction: column;
+  padding: 29px 20px 25px 30px;
+  gap: 29px;
+  height: 90px;
+  overflow-y: hidden;
+  border-bottom: 1px solid #E5E5E5;
+}
+.FAQ .faqList .faqItem.active {
+  height: -moz-max-content;
+  height: max-content;
+}
+.FAQ .faqList .faqItem.active .title .arrow {
+  transform: rotate(180deg);
+}
+.FAQ .faqList .faqItem .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.FAQ .faqList .faqItem .title h4 {
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.FAQ .faqList .faqItem .title .arrow {
+  background: none;
+  border: none;
+  outline: none;
+}
+.FAQ .faqList .faqItem p {
+  color: #4F4F4F;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer {
+  background-color: black;
+}
+footer .footer {
+  padding: 70px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer .footer .head {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+}
+footer .footer p {
+  color: #9E9E9E;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 837px;
+}
+footer .footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .bottom .leftLinks {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+footer .footer .bottom .leftLinks a {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}/*# sourceMappingURL=general.css.map */
